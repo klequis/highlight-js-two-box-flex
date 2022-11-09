@@ -1,0 +1,290 @@
+html {
+  font-size: 62.5%;
+  font-family: Helvetica, sans-serif;
+}
+
+*:focus-visible {
+  outline-offset: 4px;
+  outline-width: 1px;
+  outline-color: #DB83ED;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #000;
+  margin: 0 auto;
+  max-width: 1200px
+}
+
+header {
+  border-bottom: 0.2rem solid #000;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1.2rem 0;
+  border-top: 0.2rem solid #000;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #6D28D9;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #6D28D9;
+}
+
+article .header {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #555;
+}
+
+.logo a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.message-list td, .message-list th {
+  vertical-align: top;
+}
+
+nav a {
+  display: block;
+  line-height: 1.6;
+}
+
+/* klequis new below */
+
+pre {
+  overflow-x: auto
+}
+
+.example-container {
+  /* background-color: red; */
+  min-height: 300px;
+  display: flex;
+}
+
+.example {
+  /* background-color: blue; */
+  vertical-align: middle;
+  flex-grow: 1; /* currently main axis */
+}
+
+.example-inner {
+  /* background-color: green; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-title {
+  /* background-color: pink; */
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+
+.example-pre {
+  /* background-color: yellow; */
+  margin: 0;
+  flex-grow: 1;
+  padding-left: 5px;
+}
+
+code {
+  /* background-color: burlywood; */
+  display: inline !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 319px) {
+  body {
+    /* background-color: red; */
+    padding: 0 5px;
+  }
+  .example-container {
+    flex-flow: column;
+  }
+  nav {
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+    margin: 1rem auto 3rem;
+  }
+  .logo a {
+    font-size: 2.4rem;
+  }
+  nav a {
+    display: block;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 320px) {
+  body {
+    /* background-color: green; */
+    padding: 0 5px;
+  }
+
+  .example-container {
+    flex-flow: column;
+  }
+
+  nav {
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+    margin: 1rem auto 3rem;
+  }
+  .logo a {
+    font-size: 2.4rem;
+  }
+  nav a {
+    display: inline;
+    margin: 0 0.6rem;
+  }
+
+  footer .HF {
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('images/hf-logo.png');
+    background-size: 50px;
+    background-position: left center;
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    /* background-color: blue; */
+    padding: 0 5px;
+  }
+  .example-container {
+    flex-flow: row;
+  }
+  header {
+    margin: 0 0 3rem;
+    padding: 1.2rem 0;
+  }
+  nav {
+    margin: 0;
+    text-align: right;
+  }
+  nav a {
+    margin: 0 0 0 1.2rem;
+    display: inline;
+  }
+
+  footer .shoutout {
+    height: 50px;
+    line-height: 50px;
+    float: right;
+    text-align: right;
+  }
+
+  footer .HF {
+    float: left;
+    text-align: left;
+  }
+
+  .logo {
+    margin: 0;
+    text-align: left;
+  }
+  .logo a {
+    float: left;
+    font-size: 1.8rem;
+  }
+
+}
+
+details {
+  border: 2px solid #C7A1FF;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+summary {
+  font-weight: bold;
+}
+
+nav.breadcrumb {
+  text-align: right;
+  margin-top: 1em;
+}
+
+nav.breadcrumb a {
+  font-weight: normal;
+  color: black;
+  text-decoration: underline;
+  text-transform: none;
+  display: inline;
+  margin: 0;
+}
+
+.single_flt {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  appearance: none;
+  border-radius: 0;
+  border: 2px solid #DB83ED;
+}
+
+.filename pre {
+  margin: 5px;
+}
+
+table pre {
+  margin: 0;
+}
+
+table tbody td {
+  padding: 5px;
+}
+
+/* Utilities */
+.nowrap {
+  white-space: nowrap;
+}
+
+#error-message {
+  font-size: small;
+
+}
+.beforeafter {
+  font-style: italic;
+  font-size: 1.6rem;
+  color: black;
+}

@@ -1,0 +1,74 @@
+.example-container {
+  /* background-color: red; */
+  /*flex-direction: column;*/ /* works! */
+  min-height: 300px;
+  display: flex;
+  /*justify-content: space-around;*/ /* main axis */
+  /*align-items: stretch;*/ /* cross axis, default */
+  /*align-content: stretch; */ /* cross axis */
+}
+
+.example {
+  /* background-color: blue; */
+  border: 1px solid blue;
+  vertical-align: middle;
+  flex-grow: 1; /* currently main axis */
+  overflow-x: scroll !important;
+}
+
+.example-inner {
+  /* background-color: green; */
+  /* width: 100%; */
+  height: 100%;
+  /* make it flex */
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden !important;
+}
+
+.example-title {
+  /* background-color: pink; */
+  margin: 0;
+  padding: 0;
+}
+
+.example-pre {
+  /* background-color: yellow; */
+  margin: 0;
+  flex-grow: 1;
+  padding-left: 5px;
+  overflow-x: scroll !important
+}
+
+code {
+  background-color: burlywood;
+  display: inline !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 319px) {
+  /* body {
+    background-color: red;
+  } */
+  .container {
+    flex-flow: column;
+  }
+}
+
+@media (min-width: 320px) {
+  /* body {
+    background-color: green;
+  } */
+  .container {
+    flex-flow: column;
+  }
+}
+
+@media (min-width: 640px) {
+  /* body {
+    background-color: blue;
+  } */
+  .container {
+    flex-flow: row;
+  }
+}
